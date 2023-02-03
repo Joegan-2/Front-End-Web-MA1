@@ -1,0 +1,70 @@
+/*yaaay! it works! first gonna transplant*/
+/*okay, for actual comments, the divTidbit class is reserved for little neat tidbits I wanna add in the pages. will be updated as i figure out more on how I want to get this stuff to work*/
+.divTidbit {
+    border: .25em solid black;
+    text-align: center;
+    font-family: serif;
+    padding: .55%;
+    margin: .45em;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/*class for links to get them to work correctly, including a hover pseudo-class so that they get larger and get an underline when hovered over.*/
+.link {
+    color: #f4f5df;
+    font-family: Georgia;
+    font-weight: bold;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+/*said pseudo-class*/
+.link:hover {
+    font-weight: bolder;
+    text-decoration: underline;
+    font-size: 2.25em;
+
+}
+
+/*an ID for page titles so that they can look different from the rest of the main info*/
+#pageTitle {
+    color:firebrick;
+    font-family: 'Franklin Gothic Medium';
+}
+
+.theBody {
+    display: inline-block;
+    text-align: center;
+    margin: .15em;
+    padding: .1em;
+}
+
+/*general rules i want to have that i dont want to apply to every single thing in the body or to the p element */
+.mainInfo {
+    font-family:sans-serif;
+    display: inline-block;
+    vertical-align: middle;
+    margin: .15em;
+    padding: 10px;
+}
+
+/*something to help with scalability for images*/
+.imgDiv {
+    width:auto;
+    height:auto;
+    max-width: 50%;
+    max-height: 50%;
+    overflow: hidden;
+}
+
+/*things that i want to be generally true for the header regardless of whether or not its the nav bar*/
+header {
+    background-color: lightgray;
+    float:none;
+}
+
+/*things that i want to be generally true for the entire page, like background color*/
+body {
+    background-color: darkgray;
+}
