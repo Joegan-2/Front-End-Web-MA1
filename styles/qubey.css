@@ -1,13 +1,15 @@
 /*yaaay! it works! first gonna transplant*/
 /*okay, for actual comments, the divTidbit class is reserved for little neat tidbits I wanna add in the pages. will be updated as i figure out more on how I want to get this stuff to work*/
 .divTidbit {
-    border: .25em solid black;
+    border: .25em double black;
     text-align: center;
     font-family: serif;
     padding: .55%;
     margin: .45em;
-    display: inline-block;
+    width: 40%;
+    float: right;
     vertical-align: middle;
+    background-color: #7a473b;
 }
 
 /*class for links to get them to work correctly, including a hover pseudo-class so that they get larger and get an underline when hovered over.*/
@@ -27,11 +29,18 @@
 
 }
 
-/*an ID for page titles so that they can look different from the rest of the main info*/
+/*an ID for section titles so that they can look different from the rest of the main info*/
 #pageTitle {
     color:firebrick;
     font-family: 'Franklin Gothic Medium';
 }
+
+.sectionTitle {
+    color:firebrick;
+    font-family: 'Franklin Gothic Medium';
+    clear: both;
+}
+
 
 .theBody {
     display: inline-block;
@@ -47,24 +56,49 @@
     vertical-align: middle;
     margin: .15em;
     padding: 10px;
+    clear: both;
 }
 
 /*something to help with scalability for images*/
-.imgDiv {
+.image {
+    width:auto;
+    height:auto;
+    display: inline;
+    max-width: 50%;
+    max-height: 50%;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.imgDiv{
+    clear:none;
+    float:left;
     width:auto;
     height:auto;
     max-width: 50%;
     max-height: 50%;
     overflow: hidden;
+    padding: 10px;
 }
 
 /*things that i want to be generally true for the header regardless of whether or not its the nav bar*/
 header {
     background-color: lightgray;
-    float:none;
+    float: none;
+    text-align: center;
+    word-spacing: 4em;
 }
 
 /*things that i want to be generally true for the entire page, like background color*/
 body {
     background-color: darkgray;
+}
+
+/*id im using to get the introduction of the site to work*/
+#siteDescribe{
+    font-family:sans-serif;
+    display:inline;
+    text-align: center;
+    margin: .15em;
+    padding: 10px;
 }
