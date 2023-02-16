@@ -89,6 +89,12 @@ header {
     word-spacing: 4em;
 }
 
+footer {
+    float: none;
+    text-align: center;
+    word-spacing: 4em;
+}
+
 /*things that i want to be generally true for the entire page, like background color*/
 body {
     background-color: darkgray;
@@ -107,15 +113,24 @@ body {
     font-size:2.5em;
 }
 
-/*Possibly might look better as an article? Perhaps?*/
-article {
+li {
     font-family:sans-serif;
     display:inline;
-    border: .15em dotted #293028;
+    border: .15em dashed #293028;
     padding: .55%;
     margin: .45em;
     float: right;
-    vertical-align: middle;
     font-weight: bold;
     background-color: #955600;
+}
+
+article {
+    font-family: monospace;
+    display: inline-block;
+    vertical-align: middle;
+    margin: .15em;
+    padding: 10px;
+    clear: both;
+    font-weight: bold;
+    font-size: 18px;
 }
